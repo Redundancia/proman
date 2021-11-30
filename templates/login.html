@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+<h1 style="text-align: center">Login Page</h1><br><br><br><br>
+<div id="login_area">
+    <form id="login" action="" method="post">
+        <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required autofocus autocomplete="off"><br>
+        <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required autocomplete="off">
+        <button type="submit" value="login">Log In</button>
+    </form>
+</div><br>
+{% if not_valid %}
+    <p style="color: red">Invalid username or password</p>
+{% endif %}
+</body>
+<footer><a href="/">Return to main page</a></footer>
+</html>
